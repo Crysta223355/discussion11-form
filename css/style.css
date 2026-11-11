@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #00274c;
+    text-align: center;
+}
+
+main > p {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    color: white;
+    background-color: #00274c;
+    border-radius: 8px;
+}
+
+.form-note {
+    margin-top: 0;
+}
+
+fieldset {
+    margin: 0 0 20px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    font: inherit;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Place each radio button and label on the same line. */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.radio-option label {
+    margin: 0;
+}
+
+input[type="radio"] {
+    flex: 0 0 auto;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    color: #00274c;
+    background-color: #ffcb05;
+    font: inherit;
+    font-weight: bold;
+    border: 2px solid #ffcb05;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border-color: white;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffcb05;
+    outline-offset: 2px;
+}
